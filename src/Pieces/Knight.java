@@ -8,7 +8,7 @@ public class Knight extends Piece{
             return false;
         }
         // returns true if the knight has a valid move
-        return (Math.abs(start.getX() - start.getY()) * Math.abs(start.getX() - start.getY()) == 2);
+        return (Math.abs(start.getX() - end.getX()) * Math.abs(start.getY() - end.getY()) == 2);
     }
     public Knight(boolean white) {
         super(white);

@@ -9,7 +9,7 @@ public class Bishop {
                 return false;
             }
             // returns true if the bishop has a valid move
-            return (Math.abs(start.getX() - start.getY()) == Math.abs(start.getX() - start.getY()));
+            return (Math.abs(start.getX() - end.getX()) == Math.abs(start.getY() - end.getY()));
         }
         public Bishop(boolean white) {
             super(white);
