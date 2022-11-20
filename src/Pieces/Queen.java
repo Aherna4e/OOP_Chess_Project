@@ -1,3 +1,4 @@
+/*
 package Pieces;
 public class Queen extends Piece{
     @Override
@@ -14,3 +15,4 @@ public class Queen extends Piece{
         super(white);
     }
 }
+*/

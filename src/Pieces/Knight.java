@@ -1,4 +1,4 @@
-package Pieces;
+/*package Pieces;
 
 public class Knight extends Piece{
     @Override
@@ -14,3 +14,4 @@ public class Knight extends Piece{
         super(white);
     }
 }
+*/

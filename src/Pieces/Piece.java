@@ -1,3 +1,4 @@
+/*
 package Pieces;
 
 public abstract class Piece {
@@ -22,3 +23,4 @@ public abstract class Piece {
         this.setWhite(white);
     }
 }
+*/

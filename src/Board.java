@@ -1,5 +1,6 @@
 public class Board {
-    Square [][] gameBoard = new Square[8][8];
+    private static final int BOARD_LENGTH = 8;
+    Square [][] gameBoard = new Square[BOARD_LENGTH][BOARD_LENGTH];
     //commment to push smth
 
     public Board(){
@@ -7,14 +8,21 @@ public class Board {
             int temp = 0;
             SquareColor currColor = (i % 2==0) ? SquareColor.white : SquareColor.brown;
             for(Enum column: Enum.values()){
-                Square newSquare = new Square(currColor, new Location(column,i)); //cahnge to stupider
+                Square newSquare = new Square(currColor, new Location(column,BOARD_LENGTH- i)); //cahnge to stupider
                 gameBoard[i][temp] = newSquare;
                 currColor = (currColor == SquareColor.brown) ? SquareColor.white : SquareColor.brown;
-                temp++
+                temp++;
             }
         }
     }
 
-
+    public void displayBoard(){
+        for(Square[] row :gameBoard){
+            for (Square square : row){
+                System.out.print(square);
+            }
+            System.out.println();
+        }
+    }
 
 }
