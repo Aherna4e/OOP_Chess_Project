@@ -1,3 +1,5 @@
+package chess;
+
 import java.util.Objects;
 
 public class Location {
@@ -31,4 +33,13 @@ public class Location {
     public int hashCode() {
         return Objects.hash(column, row);
     }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "Column=" + column +
+                ", Row=" + row +
+                '}';
+    }
 }
+

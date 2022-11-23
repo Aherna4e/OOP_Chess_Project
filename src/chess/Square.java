@@ -1,7 +1,12 @@
+package chess;
+
+import chess.Pieces.Piece;
+
 public class Square {
     private SquareColor sColor;
     private Location location;
     private boolean isTaken;
+    private Piece currentPiece;
 
     public Square(SquareColor sColor, Location location){
         this.sColor = sColor;
@@ -9,8 +14,18 @@ public class Square {
         this.isTaken = false;
     }
 
-    public void reset(){
+    public void reset()
+    {
         this.isTaken = false;
+        this.currentPiece = null;
+    }
+
+    public Piece getCurrentPiece() {
+        return currentPiece;
+    }
+
+    public void setCurrentPiece(Piece currentPiece) {
+        this.currentPiece = currentPiece;
     }
 
     public void setTaken(boolean taken) {
@@ -32,5 +47,9 @@ public class Square {
                 ", location=" + location +
                 ", isTaken=" + isTaken +
                 '}';
+    }
+
+    public boolean isTaken() {
+        return isTaken;
     }
 }

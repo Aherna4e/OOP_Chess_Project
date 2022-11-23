@@ -1,7 +1,16 @@
-/*
-package Pieces;
+
+package chess.Pieces;
+
+
 public class Rook extends Piece{
-    @Override
+    public Rook(Color color){
+        super(color);
+        this.name = "Rook";
+    }
+
+
+
+/*    @Override
     public boolean validMove(Square start, Square end, Board board) {
         // checks if move is to a piece of the same color
         if (end.getPiece().isWhite() == this.isWhite()) {
@@ -12,8 +21,7 @@ public class Rook extends Piece{
     }
     public Rook(boolean white) {
         super(white);
-    }
+    } */
 }
 
 
- */

@@ -1,9 +1,15 @@
-/*
-package Pieces;
 
-public class Bishop {
-    public class Bishop extends Piece{
-        @Override
+package chess.Pieces;
+
+public class Bishop extends Piece{
+        public Bishop(Color color){
+            super(color);
+            this.name = "Bishop";
+        }
+
+
+
+/*        @Override
         public boolean validMove(Square start, Square end, Board board) {
             // checks if move is to a piece of the same color
             if (end.getPiece().isWhite() == this.isWhite()) {
@@ -15,6 +21,5 @@ public class Bishop {
         public Bishop(boolean white) {
             super(white);
         }
-    }
+    }*/
 }
-*/

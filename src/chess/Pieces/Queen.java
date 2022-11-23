@@ -1,7 +1,15 @@
-/*
-package Pieces;
-public class Queen extends Piece{
-    @Override
+
+package chess.Pieces;
+
+public class Queen extends Piece {
+        public Queen(Color color){
+            super(color);
+            this.name = "Queen";
+        }
+
+
+
+   /* @Override
     public boolean validMove(Square start, Square end, Board board) {
         // checks if move is to a piece of the same color
         if (end.getPiece().isWhite() == this.isWhite()) {
@@ -13,6 +21,6 @@ public class Queen extends Piece{
     }
     public Queen(boolean white) {
         super(white);
-    }
+    }*/
 }
-*/
+
